@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "rylunesmooth",
+  "version": "${version}",
+  "name": "RyluneSmooth",
+  "description": "A lightweight client-side optimization mod for smoother Minecraft gameplay. Tracks FPS and frame times, shows an optional performance HUD, and conservatively adjusts render distance to reduce sustained stutters on lower-end PCs. made by Cps",
+  "authors": [
+    "Cps"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.rylunesmooth.client.RyluneSmoothClient"
+    ]
+  },
+  "mixins": [
+    "rylunesmooth.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "icon": "assets/rylunesmooth/icon.png"
+}
